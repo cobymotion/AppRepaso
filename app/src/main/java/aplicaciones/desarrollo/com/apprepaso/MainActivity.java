@@ -1,11 +1,12 @@
 package aplicaciones.desarrollo.com.apprepaso;
 
-import android.content.Intent;
+
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -14,12 +15,28 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.salir).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AcercaDe.class));
-            }
-        });
+        TextView texto = (TextView) findViewById(R.id.parcial);
+        Nuevo objeto = new Nuevo(texto);
+        Button btn = (Button)findViewById(R.id.n0);
+        btn.setOnClickListener(objeto);
+        btn = (Button)findViewById(R.id.n1);
+        btn.setOnClickListener(objeto);
+        btn = (Button)findViewById(R.id.n2);
+        btn.setOnClickListener(objeto);
+        btn = (Button)findViewById(R.id.n3);
+        btn.setOnClickListener(objeto);
+        btn = (Button)findViewById(R.id.n4);
+        btn.setOnClickListener(objeto);
+        btn = (Button)findViewById(R.id.n5);
+        btn.setOnClickListener(objeto);
+        btn = (Button)findViewById(R.id.n6);
+        btn.setOnClickListener(objeto);
+        btn = (Button)findViewById(R.id.n7);
+        btn.setOnClickListener(objeto);
+        btn = (Button)findViewById(R.id.n8);
+        btn.setOnClickListener(objeto);
+        btn = (Button)findViewById(R.id.n9);
+        btn.setOnClickListener(objeto);
     }
 
 
